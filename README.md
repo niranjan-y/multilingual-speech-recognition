@@ -1,58 +1,64 @@
-# Multilingual Automatic Speech Recognition using Wav2Vec 2.0
+# Multilingual Automatic Speech Recognition using Wav2Vec2 XLS-R
 
 ## 📌 Overview
 
-This project implements a multilingual Automatic Speech Recognition (ASR) system using Wav2Vec 2.0 for converting speech into text across multiple languages.
+This project implements a Multilingual Automatic Speech Recognition (ASR) system using Facebook's Wav2Vec2 XLS-R 300M model and the Google FLEURS dataset.
 
-## 🚀 Features
+The system is designed to transcribe speech from multiple languages including:
 
-* Multilingual speech-to-text transcription
-* Audio preprocessing (resampling, normalization)
-* Transformer-based ASR using Wav2Vec 2.0
-* Model evaluation using Word Error Rate (WER)
+- Hindi
+- Telugu
+- Tamil
+- Kannada
+- English
+
+The model is fine-tuned using Hugging Face Transformers and evaluated using Word Error Rate (WER).
+
+---
+
+## 🚀 Project Highlights
+
+- Built a multilingual speech-to-text system
+- Fine-tuned Wav2Vec2 XLS-R 300M
+- Created multilingual character-level vocabulary
+- Trained on Google FLEURS dataset
+- Implemented multilingual preprocessing pipeline
+- Evaluated model performance using WER
+- Integrated Hugging Face model versioning and checkpoint recovery
+
+---
 
 ## 🛠️ Tech Stack
 
-* Python
-* PyTorch
-* Hugging Face Transformers
-* Librosa
+- Python
+- PyTorch
+- Hugging Face Transformers
+- Hugging Face Datasets
+- Google FLEURS
+- Librosa
+- Evaluate
+- JiWER
 
-## 📂 Project Structure
+---
 
-* `src/` → preprocessing, training, evaluation
-* `notebooks/` → experiments
-* `models/` → trained models
-* `outputs/` → predictions
+## 🌍 Supported Languages
 
-## ⚙️ Installation
+| Language | Code |
+|----------|------|
+| Hindi | hi_in |
+| Telugu | te_in |
+| Tamil | ta_in |
+| Kannada | kn_in |
+| English | en_us |
 
-```bash
-git clone https://github.com/your-username/multilingual-asr-wav2vec2.git
-cd multilingual-asr-wav2vec2
-pip install -r requirements.txt
-```
+---
 
-## ▶️ Usage
+## 📂 Repository Structure
 
-```bash
-python src/inference.py --audio sample.wav
-```
-
-## 📊 Evaluation
-
-Model performance is evaluated using Word Error Rate (WER).
-
-## 📁 Dataset
-
-(Add dataset used, e.g., Mozilla Common Voice)
-
-## 📈 Future Improvements
-
-* Support for more languages
-* Fine-tuning on low-resource datasets
-* Real-time transcription system
-
-## 🤝 Contributions
-
-Open to contributions and improvements!
+```text
+multilingual-speech-recognition/
+│
+├── Multilingual_ASR_XLS_R_v2.ipynb
+├── README.md
+├── requirements.txt
+└── screenshots/

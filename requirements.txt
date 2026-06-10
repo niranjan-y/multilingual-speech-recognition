@@ -1,0 +1,11 @@
+torch
+transformers
+datasets
+evaluate
+jiwer
+librosa
+soundfile
+huggingface_hub
+accelerate
+gradio
+numpy
